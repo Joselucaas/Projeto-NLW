@@ -6,6 +6,9 @@
 * {
     margin: 0;
     padding: 0;
+
+    /*box-sizing: border-box; ignora o padding e deixa o tamnho real do width*/
+    box-sizing: border-box;
 }
 
 html {
