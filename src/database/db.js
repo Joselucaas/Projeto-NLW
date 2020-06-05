@@ -57,7 +57,7 @@ db.serialize(() => {
     }
 
      db.run(query, values, afterInsertData) 
-    
+     
     // Consultar os dados da tabela
     db.all(`SELECT * FROM places`, function(err, rows) {
         if(err) {
@@ -69,7 +69,7 @@ db.serialize(() => {
     })
 
     // Deletar um dado da tabela
-    db.run(`DELETE FROM places WHERE id = ?`, [6], function(err) {
+    db.run(`DELETE FROM places WHERE id = ?`, [8], function(err) {
         if(err) {
             return console.log(err)
         }
